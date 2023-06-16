@@ -11,7 +11,10 @@ for (i = 0 ; i <= 9 ; i++)
 	for (j = i + 1 ; i <= 9 ; j++)
 	{
 		for (z = j + 1 ; z <= 9 ; z++)
-		{
+	{
+		putchar(i + '0');
+		putchar(j + '0');
+		putchar(z + '0');
 			if (i != 7 || j != 8 || z != 9)
 			{
 				putchar(',');
