@@ -2,7 +2,7 @@
 /**
  * _islower - a project about veryfing if a
  * letter is lowercase
- * c - is a parametre
+ * @c: is a parametre
  * Return: 0(SUCCESS)
  */
 int _islower(int c)
