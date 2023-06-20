@@ -3,7 +3,7 @@
  * main - this void function
  * print_alphabet Prints the English alphabet in lowercase
  * shows letters
- * Return: 0(SUCCESS)
+ * Return: void
  */
 void print_alphabet(void)
 {
