@@ -2,7 +2,7 @@
 /**
  *_isalpha - is a function shows if an
  * alpha is a lower/upper case or not
- * @c: is a paramatere 
+ * @c: is a paramatere
  *Return: 0(SUCCESS)
  */
 int _isalpha(int c)
