@@ -15,21 +15,19 @@ if (r > 9)
 {
 _putchar((r / 10) + '0');
 _putchar((r % 10) + '0');
-if (j != 9)
+_putchar(',');
+_putchar(' ');
+
+}
+else
+{
+if (j != 0)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 }
-}
-else if (r <= 9)
-{
 _putchar(r + '0');
-if (j <= 8)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
 }
 }
 _putchar('\n');
