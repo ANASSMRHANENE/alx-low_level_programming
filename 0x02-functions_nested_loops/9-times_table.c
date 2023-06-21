@@ -21,7 +21,7 @@ _putchar(',');
 _putchar(' ');
 }
 }
-else
+else if (r <= 9)
 {
 _putchar(r + '0');
 if (j != 9)
