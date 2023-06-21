@@ -15,7 +15,7 @@ if (r > 9)
 {
 _putchar((r / 10) + '0');
 _putchar((r % 10) + '0');
-if (j != 9 && i != 9)
+if (j != 9)
 {
 _putchar(',');
 }
@@ -24,7 +24,7 @@ _putchar(' ');
 else
 {
 _putchar(r + '0');
-if (j != 9 && i != 9)
+if (j != 9)
 {
 _putchar(',');
 }
