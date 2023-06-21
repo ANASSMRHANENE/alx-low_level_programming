@@ -13,11 +13,10 @@ for (j = 0 ; j <= 9 ; j++)
 r = i * j;
 if (r > 9)
 {
-_putchar((r / 10) + '0');
-_putchar((r % 10) + '0');
 _putchar(',');
 _putchar(' ');
-
+_putchar((r - (r % 10)) + '0');
+_putchar((r / 10) + '0');
 }
 else
 {
