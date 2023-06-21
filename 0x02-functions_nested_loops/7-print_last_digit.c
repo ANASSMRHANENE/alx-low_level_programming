@@ -13,5 +13,5 @@ r = n * (-1);
 }
 r = n % 10;
 	_putchar(r + '0');
-	return (n % 10);
+	return (r);
 }
