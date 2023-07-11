@@ -21,9 +21,9 @@ return (NULL);
 }
 while(i < size)
 {
-s[i] = c;
+p[i] = c;
 i++;
 }
-s[i] = '\0';
-return (s);
+p[i] = '\0';
+return (p);
 }
