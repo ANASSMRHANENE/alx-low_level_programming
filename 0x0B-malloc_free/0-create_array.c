@@ -5,6 +5,7 @@
  * create_array - function
  * @size : parametre
  * @c : parametre
+ *Return : pointer to an array
  */
 char *create_array(unsigned int size, char c)
 {
