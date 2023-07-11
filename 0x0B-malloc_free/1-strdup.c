@@ -19,7 +19,7 @@ j = i + 1;
 p = malloc(sizeof(char) * j);
 while (n <= i)
 {
-if (str == NULL)
+if (p == NULL)
 {
 return (NULL);
 }
