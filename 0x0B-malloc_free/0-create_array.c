@@ -6,14 +6,22 @@
  */
 char *create_array(unsigned int size, char c)
 {
+char *p;
+int i = 0;
 if (size == 0)
 {
 return (NULL);
 }
-else
+p = malloc(size * sizeof(char));
+if (p == NULL)
 {
-char *p = (char *)malloc(size * sizeof(char));
-return (p);
-}
 return (NULL);
+}
+while(i < size)
+{
+s[i] = c;
+i++;
+}
+s[i] = '\0';
+return (s);
 }
