@@ -18,7 +18,7 @@ i++;
 }
 j = i + 1;
 p = malloc(sizeof(char) * j);
-while (n <= i)
+while (n < j)
 {
 if (p == NULL)
 {
