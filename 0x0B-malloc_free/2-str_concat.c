@@ -14,6 +14,14 @@ int j = 0;
 int n = 0;
 int m = 0;
 char *p;
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
 while (s1[i] != '\0')
 {
 i++;
