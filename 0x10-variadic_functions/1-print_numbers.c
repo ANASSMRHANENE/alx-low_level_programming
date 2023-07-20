@@ -14,11 +14,11 @@ va_list args;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-printf ("%d", va_arg(args, unsigned int));
+printf("%d", va_arg(args, unsigned int));
 }
 if (i < n && separator)
 {
-printf ("%s", separator);
+printf("%s", separator);
 }
 printf("\n");
 va_end(args);
