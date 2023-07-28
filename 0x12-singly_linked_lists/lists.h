@@ -5,6 +5,7 @@
  * @str: parametre
  * @len: parametre
  * @next: pointer
+ *
  * Description: linked list
  */
 typedef struct list_s
