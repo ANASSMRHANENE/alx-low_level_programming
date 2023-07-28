@@ -1,7 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 /**
- * struct - function
+ * struct list_s - function
  * @str: parametre
  * @len: parametre
  * @next: pointer
