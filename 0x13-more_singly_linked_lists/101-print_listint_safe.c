@@ -3,15 +3,13 @@
 #include <stdio.h>
 
 /**
- * find_listint_loop_pl - finds a loop in a linked list
- *
- * @head: linked list to search
- *
- * Return: address of node where loop starts/returns, NULL if no loop
+ * find_listint_loop_pl - function
+ * @head: pointer
+ * Return: address of node
  */
 listint_t *find_listint_loop_pl(listint_t *head)
 {
-	listint_t *ptr, *end;
+	listint_t *p, *end;
 
 	if (head == NULL)
 		return (NULL);
@@ -20,8 +18,8 @@ listint_t *find_listint_loop_pl(listint_t *head)
 	{
 		if (end == end->next)
 			return (end);
-		for (ptr = head; ptr != end; ptr = ptr->next)
-			if (ptr == end->next)
+		for (p = head; p != end; p = p->next)
+			if (p == end->next)
 				return (end->next);
 	}
 	return (NULL);
@@ -38,16 +36,16 @@ listint_t *find_listint_loop_pl(listint_t *head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t len = 0;
-	int loop;
+	int i;
 	listint_t *loopnode;
 
 	loopnode = find_listint_loop_pl((listint_t *) head);
 
-	for (len = 0, loop = 1; (head != loopnode || loop) && head != NULL; len++)
+	for (len = 0, i = 1; (head != loopnode || i) && head != NULL; len++)
 	{
 		printf("[%p] %d\n", (void *) head, head->n);
 		if (head == loopnode)
-			loop = 0;
+			i = 0;
 		head = head->next;
 	}
 
