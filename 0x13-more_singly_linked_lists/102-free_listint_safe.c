@@ -24,7 +24,7 @@ listint_t *find_listint_loop_fl(listint_t *head)
 }
 /**
  * free_listint_safe - function
- * @h: pointer 
+ * @h: pointer
  * Return: number of nodes to be freed
  */
 size_t free_listint_safe(listint_t **h)
