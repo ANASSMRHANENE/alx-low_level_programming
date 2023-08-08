@@ -16,7 +16,7 @@ for (s = 0; text_content[s];)
 s++;
 }
 r = open(filename, O_WRONLY | O_APPEND);
-w = write(o, text_content, s);
+w = write(r, text_content, s);
 if (r == -1 || w == -1)
 return (-1);
 close(r);
