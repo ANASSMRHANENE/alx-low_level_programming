@@ -13,7 +13,7 @@ if (filename == NULL)
 return (-1);
 if (text_content != NULL)
 {
-for (len = 0; text_content[s];)
+for (s = 0; text_content[s];)
 s++;
 }
 r = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
